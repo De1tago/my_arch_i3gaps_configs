@@ -9,9 +9,9 @@ exec --no-startup-id picom -b
 exec xrandr --output Virtual-1 --mode 1920x1080
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 # Screenshots
-bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
-bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
-bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+bindsym Print exec --no-startup-id maim "/home/$USER/Image/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Image/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Image/$(date)"
 
 # ГОРЯЧИЕ КЛАВИШИ
 bindsym $mod+F1 exec microsoft-edge-stable
