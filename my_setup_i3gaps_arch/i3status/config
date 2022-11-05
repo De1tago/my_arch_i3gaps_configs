@@ -21,9 +21,9 @@ order += "tztime local"
 
 
 memory {
-        format = "%used"
+        format = "RAM: %used  "
         threshold_degraded = "10%"
-        format_degraded = "RAM: %free"
+        format_degraded = "%free"
 }
 
 
