@@ -2,13 +2,13 @@ general {
         output_format = "i3bar"
         colors = false
         markup = pango
-        interval = 5
+        interval = 1 
         color_good = '#2f343f'
 		color_degraded = '#ebcb8b'
 		color_bad = '#ba5e57'
 }
 
-
+order += "memory"
 #order += "cpu_temperature 0" %a %-d %b 
 order += "disk /"
 #order += "disk /home"
@@ -18,6 +18,13 @@ order += "volume master"
 #order += "battery 1"
 order += "tztime local"
 #order += "load"
+
+
+memory {
+        format = "%used"
+        threshold_degraded = "10%"
+        format_degraded = "RAM: %free"
+}
 
 
 
@@ -39,14 +46,13 @@ disk "/" {
 
 
 volume master {
-	format = " %volume" # шаблон громкости в активном состоянии
-    	format_muted = "x %volume" # шаблон громкости в состоянии muted (без звука)
+	format = "  %volume" # шаблон громкости в активном состоянии
+    	format_muted = " x %volume" # шаблон громкости в состоянии muted (без звука)
 	device = "default"
  	mixer = "Master"
    	mixer_idx = 0
 }
 
 tztime local{
-	format = "    %d %b  %H:%M:%S"
+	format = "    %d %b   %H:%M:%S"
 }
-
