@@ -6,13 +6,13 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id numlockx
 exec --no-startup-id picom -b
 #exec --no-startup-id polybar example
-exec xrandr --output Virtual1 --mode 1920x1080
+exec xrandr --output Virtual-1 --mode 1920x1080
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 
 
 # ГОРЯЧИЕ КЛАВИШИ
 bindsym $mod+F1 exec microsoft-edge-stable
-bindsym $mod+F2 exec thunar
+bindsym $mod+F2 exec pcmanfm
 
 # ПРИВЯЗКА К ВОРКСПЕЙСАМ
 assign [class="microsoft-edge-stable"] $ws1
@@ -23,7 +23,7 @@ assign [class="Steam"] $ws9
 
 # ПРИЛОЖЕНИЯ В ФОКУСЕ
 assign [class="microsoft-edge-stable"] $ws1
-
+assign [class="nitrogen"] $ws4
 
 # ПЛАВАЮЩИЕ ПРИЛОЖЕНИЯ
 for_window [class="microsoft-edge-stable"] floating enable
@@ -44,7 +44,6 @@ floating_modifier $mod
 
 # ЗАПУСК ТЕРМИНАЛА
 bindsym $mod+Return exec kitty
-
 
 # ЗАКРЫТЬ ОКНО
 bindsym $mod+Shift+q kill
@@ -134,10 +133,10 @@ client.placeholder		#d1d9ec #262626 #011b28 #011b28
 #	client.urgent — окно требует внимания (всплывающее) 
 
 # ИМЕНА ВОРКСПЕЙСОВ И ИХ НОМЕРА
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
