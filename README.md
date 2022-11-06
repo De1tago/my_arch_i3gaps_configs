@@ -9,11 +9,7 @@
 
 
 
-My packeges: 
+Базовые пакеты:
 
-	i3gaps kittty ranger fish pulseaudio i3exit i3lock picom w3m code feh
-
-GTK-manager lxappearance
-
-    themes: arc-darkest-theme
-    icons pack: papirus dark-kde
+	i3gaps xorg-xinit xorg dmenu lightdm lightdm-gtk-greeter
+	
