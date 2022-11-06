@@ -11,5 +11,8 @@
 
 Базовые пакеты:
 
-	i3gaps xorg-xinit xorg dmenu lightdm lightdm-gtk-greeter
+	i3gaps xorg-xinit xorg dmenu lightdm lightdm-gtk-greeter i3-status i3lock i3exit
 	
+Опциональные пакеты:
+	
+	kitty ranger numlockx xrandr pcmanfm lxappearance nitrogen
